@@ -22,3 +22,76 @@
 
 
 
+/* Research hero image marquee */
+#work-hero {
+  overflow: hidden;
+  position: relative;
+}
+
+#work-hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+#work-hero .research-hero-marquee {
+  background: #162415;
+  inset: 0;
+  overflow: hidden;
+}
+
+#work-hero .research-hero-marquee::after {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.32));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+#work-hero .research-hero-marquee__track {
+  animation: researchHeroMarquee 85s linear infinite;
+  display: flex;
+  height: 100%;
+  width: max-content;
+  will-change: transform;
+}
+
+#work-hero .research-hero-marquee__group {
+  display: flex;
+  flex: 0 0 auto;
+  height: 100%;
+}
+
+#work-hero .research-hero-marquee__group img {
+  display: block;
+  flex: 0 0 auto;
+  height: 100%;
+  min-width: 360px;
+  object-fit: cover;
+  object-position: center;
+  width: 34vw;
+}
+
+@keyframes researchHeroMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  #work-hero .research-hero-marquee__group img {
+    min-width: 260px;
+    width: 72vw;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #work-hero .research-hero-marquee__track {
+    animation: none;
+    transform: translateX(-10%);
+  }
+}
