@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#eaf1ed"/>
+  <circle cx="480" cy="245" r="185" fill="#d4e3d9"/>
+  <g stroke="#2d6d40" stroke-width="10" stroke-linecap="round" fill="none">
+    <path d="M480 110v265M305 195h350M305 300h350"/>
+    <ellipse cx="480" cy="245" rx="28" ry="100" fill="#2d6d40"/>
+    <g fill="#eaf1ed">
+      <circle cx="305" cy="195" r="32"/><circle cx="405" cy="195" r="32"/><circle cx="555" cy="195" r="32"/><circle cx="655" cy="195" r="32"/>
+      <circle cx="305" cy="300" r="32"/><circle cx="405" cy="300" r="32"/><circle cx="555" cy="300" r="32"/><circle cx="655" cy="300" r="32"/>
+    </g>
+  </g>
+  <text x="480" y="470" text-anchor="middle" fill="#26312b" font-family="Arial,sans-serif" font-size="32" font-weight="700">TILT-eVTOL DESIGN</text>
+  <text x="480" y="518" text-anchor="middle" fill="#536158" font-family="Arial,sans-serif" font-size="24">Sizing · Aeromechanics · Control</text>
+</svg>

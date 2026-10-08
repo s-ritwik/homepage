@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#eaf1ed"/>
+  <circle cx="480" cy="245" r="170" fill="#d4e3d9"/>
+  <g fill="none" stroke="#2d6d40" stroke-width="12" stroke-linecap="round">
+    <rect x="392" y="157" width="176" height="176" rx="20"/>
+    <rect x="438" y="203" width="84" height="84" rx="8"/>
+    <path d="M425 157v-35m55 35v-35m55 35v-35m-110 211v35m55-35v35m55-35v35M392 190h-35m35 55h-35m35 55h-35m211-110h35m-35 55h35m-35 55h35"/>
+  </g>
+  <text x="480" y="470" text-anchor="middle" fill="#26312b" font-family="Arial,sans-serif" font-size="32" font-weight="700">GPU-ACCELERATED KINEMATICS</text>
+  <text x="480" y="518" text-anchor="middle" fill="#536158" font-family="Arial,sans-serif" font-size="24">CUDA · CasADi · Pinocchio</text>
+</svg>

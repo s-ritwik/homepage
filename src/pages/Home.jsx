@@ -46,7 +46,7 @@ export default function Home() {
       <Hero title="Ritwik Shankar" subtitle="Showcasing my professional journey" image="assets/images/home-hero-bg.jpg">
         <a className="primary-button" href="assets/documents/ritwik-cv.pdf" target="_blank" rel="noreferrer">
           Curriculum vitae
-          <span>Last updated: April 2026</span>
+          <span>Last updated: October 2026</span>
         </a>
       </Hero>
 
@@ -54,10 +54,10 @@ export default function Home() {
         <div className="about-grid about-grid-centered">
           <div>
             <p className="eyebrow">About me</p>
-            <h2>Undergraduate @ IIT Kanpur</h2>
-            <p>I am a Senior Undergraduate in the department of Aerospace Engineering at IIT KANPUR.I am really passionate about knowing about anything which flies.</p>
-            <p>My research interests include Rotorcrafts, Reinforcement Learning for stable gait generation, Computer vision and ML based algorithms to solve problems relating to autonomy and Implementing these algorithms to UAV's using optimal controls strategies. I also have experience with Design optimisation for performance maximisation of Aerial Vehicles.</p>
-            <p>I am <b>Goal Oriented</b> person, literally, holding the midfield and captaining IITK FC</p>
+            <h2>Graduate Student @IIT Kanpur</h2>
+            <p>I am an Aerospace Engineering graduate of IIT Kanpur, where I completed a B.Tech.-M.Tech. dual degree and received the <b>Director’s Gold Medal</b> for outstanding all-round achievement and leadership.</p>
+            <p>My research combines reinforcement learning, model-based control, and onboard perception for autonomous aerial vehicles and legged robots. I am particularly interested in connecting physical models with learning-based methods, then testing those ideas on hardware. I also work on rotorcraft design optimisation and performance analysis.</p>
+            <p> I am a <b>goal-oriented</b> person, literally, holding the midfield and captaining IITK FC.</p>
           </div>
           <div className="about-carousel" aria-label="About photo carousel">
             <div className="about-carousel-frame">

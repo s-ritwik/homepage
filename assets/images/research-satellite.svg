@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#eaf1ed"/>
+  <circle cx="480" cy="245" r="175" fill="#d4e3d9"/>
+  <g fill="none" stroke="#2d6d40" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-20 480 245)">
+    <rect x="430" y="195" width="100" height="100" rx="10" fill="#2d6d40"/>
+    <path d="M430 245h-25m125 0h25"/>
+    <rect x="290" y="205" width="115" height="80" rx="5"/>
+    <rect x="555" y="205" width="115" height="80" rx="5"/>
+    <path d="M328 205v80m39-80v80m-77-40h115m188-40v80m39-80v80m-77-40h115M480 195v-35m-30 0h60"/>
+  </g>
+  <text x="480" y="470" text-anchor="middle" fill="#26312b" font-family="Arial,sans-serif" font-size="32" font-weight="700">SATELLITE ATTITUDE CONTROL</text>
+  <text x="480" y="518" text-anchor="middle" fill="#536158" font-family="Arial,sans-serif" font-size="24">Control Lyapunov Functions · QP · MPC</text>
+</svg>

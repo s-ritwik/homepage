@@ -258,9 +258,12 @@ img { display: block; max-width: 100%; }
 .project-modal-backdrop { background: rgba(14, 22, 18, 0.72); border: 0; inset: 0; position: absolute; }
 .project-modal-panel { background: #ffffff; border-radius: 8px; box-shadow: 0 22px 70px rgba(0, 0, 0, 0.35); display: grid; grid-template-columns: 1fr 1fr; max-height: min(760px, calc(100vh - 3rem)); max-width: 980px; overflow: hidden; position: relative; width: 100%; z-index: 1; }
 .project-modal-panel > img { background: #f4f7f5; height: 100%; max-height: min(760px, calc(100vh - 3rem)); min-height: 360px; object-fit: contain; padding: 1rem; width: 100%; }
-.project-modal-content { overflow: auto; padding: 2.5rem 3.8rem 2.5rem 2.5rem; }
+.project-modal-content { min-height: 0; overflow: auto; padding: 2.5rem 3.8rem 2.5rem 2.5rem; }
 .project-modal-content h3 { font-size: 1.45rem; line-height: 1.25; margin: 0 0 1rem; }
 .project-modal-content p { color: #536158; line-height: 1.65; margin: 0; }
+.project-modal-content p + p { margin-top: 1rem; }
+.project-modal-content ul { color: #536158; line-height: 1.65; padding-left: 1.25rem; }
+.project-modal-content li + li { margin-top: 0.5rem; }
 .project-modal-links { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
 .project-modal-links a { border: 1px solid #26312b; color: #26312b; padding: 0.75rem 0.95rem; text-decoration: none; }
 .project-modal-close { align-items: center; background: #ffffff; border: 1px solid rgba(38, 49, 43, 0.16); display: inline-flex; justify-content: center; min-height: 44px; min-width: 44px; position: absolute; right: 0.8rem; top: 0.8rem; z-index: 2; }
@@ -283,6 +286,7 @@ img { display: block; max-width: 100%; }
   .research-grid { max-width: 680px; }
   .about-grid { max-width: 680px; }
   .project-modal-panel > img { height: auto; max-height: 320px; min-height: 0; }
+  .project-modal-panel { grid-template-rows: auto minmax(0, 1fr); }
 }
 
 @media (max-width: 720px) {
