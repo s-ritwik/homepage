@@ -200,10 +200,10 @@ const projectCatalog = [
 // Lead with the latest paper, followed by barrier-function MPC, Caltech, and published vision work.
 const featuredProjectTitles = [
   "Barrier-Shaped Recurrent Reinforcement Learning for Autonomous Landing on a Heaving Ship Deck",
-  "GNSS-Denied Navigation by Camera-to-Satellite Map Matching",
   "Barrier Function-Optimised Model Predictive Controller Using GRU For Autonomous UAV Quadrotor Landing On A Heaving Ship-Deck Emulator",
   "A Comparative Study of Model-Based and<br>Reinforcement Learning Control Paradigms for<br>Planar Biped Walking",
   "Autonomous Landing On A Moving Ship-Deck",
+  "GNSS-Denied Navigation by Camera-to-Satellite Map Matching",
 ];
 const projectRank = ({ titleHtml }) => {
   const rank = featuredProjectTitles.indexOf(titleHtml);
