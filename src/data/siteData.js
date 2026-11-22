@@ -2,11 +2,11 @@ const newsItems = [
   { date: "Oct 2026:", html: "Released the <a href=\"https://arxiv.org/abs/2610.03924\" target=\"_blank\" rel=\"noreferrer\"><b>arXiv preprint</b></a> of \"Barrier-Shaped Recurrent Reinforcement Learning for Autonomous Landing on a Heaving Ship Deck\", submitted to <b>IEEE ICRA 2027</b>." },
   { date: "Jul 2026:", html: "Received the <b>Director’s Gold Medal</b> at IIT Kanpur’s 59th Convocation, recognising outstanding all-round achievement and leadership." },
   {date: "May 2026:", html: "Defended my <a href=\"assets/documents/218070866.pdf\" target=\"_blank\" rel=\"noreferrer\">master’s thesis</a>, \"Safe and Robust Autonomous Landing of a Quadrotor on an Emulated Ship Deck: Barrier Function-based Model Predictive Control and Reinforcement Learning Approaches\"." },
-  {date: "March 2026:", html: "Received <a href=\"https://vertipedia.vtol.org/biographies/getBiography/biographyID/213?_gl=1*qluf33*_ga*MTA2MzU5NjcxMC4xNzgxNjcyNTk0*_ga_B756Q7WGPS*czE3ODQ4NzYwMDckbzIkZzEkdDE3ODQ4NzYxNjYkajYwJGwwJGgw\"><b>Dr. Richard M. Carlson Scholarship</b></a> (Masters Category) from the <a href=\"https://vtol.org/education/vertical-flight-foundation-scholarships/featured-biographies?studentID=593\"><b>Vertical Flight Society</b></a> for exceptional work on vertical flight technology" },
+  {date: "March 2026:", html: "Received <a href=\"https://vertipedia.vtol.org/biographies/getBiography/biographyID/213?_gl=1*qluf33*_ga*MTA2MzU5NjcxMC4xNzgxNjcyNTk0*_ga_B756Q7WGPS*czE3ODQ4NzYwMDckbzIkZzEkdDE3ODQ4NzYxNjYkajYwJGwwJGgw\"><b>Dr. Richard M. Carlson Scholarship</b></a> (Masters Category) from the <a href=\"https://vtol.org/education/vertical-flight-foundation-scholarships/featured-biographies?studentID=593\"><b>Vertical Flight Society</b></a> for exceptional work on vertical flight technology (<a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7447672286372929537/\" target=\"_blank\" rel=\"noreferrer\">press release</a>)." },
   {date: "Sept 2025:", html: "Received the <b>IndiaAI Fellowship</b> for the second time to continue my research on reinforcement learning for autonomous UAV ship-deck landing." },
   { date: "Aug 2025:", html: "Started my master’s studies in Aerospace Engineering at IIT Kanpur." },
   { date: "Aug 2025:", html: "Completed a ten-week <b>SURF research internship at Caltech</b> (May–August 2025) in <a href=\"https://mce.caltech.edu/people/adames\" target=\"_blank\" rel=\"noreferrer\">Prof. Aaron Ames’</a> AMBER Lab, comparing model-based and reinforcement-learning approaches to bipedal walking. <a href=\"https://iitk-my.sharepoint.com/:p:/g/personal/ritwiks21_iitk_ac_in/EWgJas-eFXNJkl--Yyn25y0BRrzuttYj6Jd9-Zl6wnjJ7g?e=0tlKi2\" target=\"_blank\" rel=\"noreferrer\">Presentation</a>." },
-  { date: "March 2025:", html: "Received the <a href=\"https://vertipedia.vtol.org/biographies/getBiography/biographyID/31?_gl=1*uib3t9*_ga*MTk2MjAwNzQ2Ni4xNzE2ODk1MDQz*_ga_B756Q7WGPS*MTc0MzY2OTc0Ni4xMDQuMS4xNzQzNjcwMDgwLjAuMC4w\"><b>Frank N. Piasecki Scholarship</b></a> (UG Category) from the <a href=\"https://vtol.org/education/vertical-flight-foundation-scholarships/featured-biographies?studentID=593\"><b>Vertical Flight Society</b></a> for exceptional work on vertical flight technology" },
+  { date: "March 2025:", html: "Received the <a href=\"https://vertipedia.vtol.org/biographies/getBiography/biographyID/31?_gl=1*uib3t9*_ga*MTk2MjAwNzQ2Ni4xNzE2ODk1MDQz*_ga_B756Q7WGPS*MTc0MzY2OTc0Ni4xMDQuMS4xNzQzNjcwMDgwLjAuMC4w\"><b>Frank N. Piasecki Scholarship</b></a> (UG Category) from the <a href=\"https://vtol.org/education/vertical-flight-foundation-scholarships/featured-biographies?studentID=593\"><b>Vertical Flight Society</b></a> for exceptional work on vertical flight technology (<a href=\"https://vtol.org/news/press-release-vfs-announces-2025-vertical-flight-foundation-scholarship-recipients\" target=\"_blank\" rel=\"noreferrer\">press release</a>)." },
   { date: "Jan 2025:", html: "Received IIT Kanpur’s <b>Academic Excellence Award</b> for outstanding academic performance." },
   { date: "Aug 2024:", html: "My first first-author paper, <a href=\"https://proceedings.vtol.org/81/autonomy-and-uas/vision-based-landing-of-uav-on-simulated-ship-deck-with-roll--pitch-and-sway-motions\" target=\"_blank\" rel=\"noreferrer\">\"Vision-Based Landing of UAV on Simulated Ship Deck with Roll Pitch and Sway Motions\"</a>, was accepted for <b>VFS Forum 81</b> (2025)." },
   { date: "Nov 2024:", html: "Defended my final <a href=\"assets/documents/ugp-report.pdf\" target=\"_blank\" rel=\"noreferrer\"><b>B.Tech. thesis</b></a> before the undergraduate committee." },
@@ -53,6 +53,15 @@ export const heroResearchImages = [
 ];
 
 const projectCatalog = [
+  {
+    titleHtml: "GNSS-Denied Navigation by Camera-to-Satellite Map Matching",
+    modalTitleHtml: "GNSS-Denied Navigation by Camera-to-Satellite Map Matching",
+    image: "assets/images/research-gnss-denied.jpg",
+    alt: "A flight camera frame laid on satellite imagery where the map match placed it",
+    descriptionHtml: `<p>LAT Aerospace<br> Map Matching | MSCKF / VIO | GTSAM Fusion | Real-Flight Validation<br><b>Sub-10 m error over 28.9 km with no wrong-place locks; 4.5 m RMSE fused on a live flight.</b></p>`,
+    modalHtml: `<p>Built a prior-free GNSS-denied localisation pipeline from scratch that matches downward camera frames to satellite imagery across a 6,900 km<sup>2</sup> map. Over 28.9 km of flight it kept the error under 10 m with no wrong-place locks. Fused the map-matching fixes with visual-inertial odometry in GTSAM, giving 4.5 m RMSE over a 2.6 km live flight on real hardware.</p><p>Re-implemented the MSCKF with FEJ2, and fixed active-SLAM triangulation failures during extended hover with gating and barometer seeding. Ran more than 4,000 VIO front-end trials (FAST/XFeat × KLT/ORB/LighterGlue) on EuRoC and flight data, ranked on NEES.</p><p>The interactive results page shows three real flights: each camera frame, the frame laid on the satellite map where the match placed it, the flight track, and the fused trajectory against GPS.</p>`,
+    links: [{ label: "Interactive Flight Results", href: "https://s-ritwik.github.io/flight-results/" }],
+  },
   {
     titleHtml: "Barrier Function-Optimised Model Predictive Controller Using GRU For Autonomous UAV Quadrotor Landing On A Heaving Ship-Deck Emulator",
     modalTitleHtml: "Barrier Function-Optimised Model Predictive Controller Using GRU For Autonomous UAV Quadrotor Landing On A Heaving Ship-Deck Emulator",
@@ -191,6 +200,7 @@ const projectCatalog = [
 // Lead with the latest paper, followed by barrier-function MPC, Caltech, and published vision work.
 const featuredProjectTitles = [
   "Barrier-Shaped Recurrent Reinforcement Learning for Autonomous Landing on a Heaving Ship Deck",
+  "GNSS-Denied Navigation by Camera-to-Satellite Map Matching",
   "Barrier Function-Optimised Model Predictive Controller Using GRU For Autonomous UAV Quadrotor Landing On A Heaving Ship-Deck Emulator",
   "A Comparative Study of Model-Based and<br>Reinforcement Learning Control Paradigms for<br>Planar Biped Walking",
   "Autonomous Landing On A Moving Ship-Deck",
